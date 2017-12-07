@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+         
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>LINGO入门笔记</title>
+        <style>
+
+    html body {
+        font-family: 'Raleway', sans-serif;
+        background-color: white;
+    }
+
+    :root {
+        --accent: red;
+        --border-width:  5px ;
+    }
+
+</style>
+
+
+<link rel="stylesheet" href="http://haozero.cc//css/main.css">
+
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+
+ <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-dark.min.css"> 
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+ 
+
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/haskell.min.js"></script>  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/kotlin.min.js"></script>  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/scala.min.js"></script>  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/swift.min.js"></script> 
+
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
+ <meta name="generator" content="Hugo 0.30.2" />
+        
+        
+        
+    </head>
+
+    <body>
+         
+        <nav class="navbar navbar-default navbar-fixed-top">
+
+            <div class="container">
+
+                <div class="navbar-header">
+
+                    <a class="navbar-brand visible-xs" href="#">LINGO入门笔记</a>
+
+                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                </div>
+
+                <div class="collapse navbar-collapse">
+
+                    
+                        <ul class="nav navbar-nav">
+                            
+                                <li><a href="/">首页</a></li>
+                            
+                                <li><a href="/post/">文章</a></li>
+                            
+                                <li><a href="/todo">ToDo</a></li>
+                            
+                        </ul>
+                    
+
+                    
+                        <ul class="nav navbar-nav navbar-right">
+                            
+                                <li class="navbar-icon"><a href="mailto:haozero@outlook.com"><i class="fa fa-envelope-o"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://github.com/Haozero/"><i class="fa fa-github"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://weibo.cn/skyenr/"><i class="fa fa-weibo"></i></a></li>
+                            
+                        </ul>
+                    
+
+                </div>
+
+            </div>
+
+        </nav>
+
+
+<main>
+
+    <div class="item">
+
+    
+    
+    
+
+    
+    
+
+    <h4><a href="/post/introduction_to_lingo/">LINGO入门笔记</a></h4>
+    <h5>August 14，2015</h5>
+    
+
+</div>
+
+
+    <br> <div class="text-justify">
+
+<h1 id="lingo命令行命令">LINGO命令行命令</h1>
+
+<h2 id="1-lingo信息">1. LINGO信息</h2>
+
+<p><code>Cat</code> 显示所有命令类型</p>
+
+<p><code>Com</code> 按类型显示所用LINGO命令</p>
+
+<p><code>Help</code> 显示所需命令的简要帮助信息</p>
+
+<p><code>Mem</code> 显示内存变量的信息</p>
+
+<h2 id="2-输入-input">2. 输入(Input)</h2>
+
+<p><code>model</code> 以命令行方式输入一个模型</p>
+
+<p><code>take</code> 执行一个文件的命令正本或从磁盘中读取某个模型文件</p>
+
+<h2 id="3-显示-display">3. 显示(Display)</h2>
+
+<p><code>look</code> 显示当前模型的内容</p>
+
+<p><code>genl</code> 产生LINGO兼容的模型</p>
+
+<p><code>gen</code> 生成并显示整个模型</p>
+
+<p><code>hide</code> 为模型设置密码保护</p>
+
+<p><code>pause</code> 暂停屏幕输出直至再次使用此命令</p>
+
+<h2 id="4-文件输出-file-ouput">4. 文件输出(File Ouput)</h2>
+
+<p><code>div</code> 将模型结果输出到文件</p>
+
+<p><code>svrt</code> 将模型结果输出到屏幕</p>
+
+<p><code>save</code> 将当前模型保存到文件</p>
+
+<p><code>smps</code> 将当前模型保存为MPS文件</p>
+
+<h2 id="5-求解模型-solution">5. 求解模型(Solution)</h2>
+
+<p><code>go</code> 求解当前模型</p>
+
+<p><code>solu</code> 显示当前模型的求解结果</p>
+
+<h2 id="6-编辑模型-problem-editing">6. 编辑模型(Problem Editing)</h2>
+
+<p><code>del</code> 从当前模型中删除指定的某一行或某两行之间(包括这两行)的所有行</p>
+
+<p><code>ext</code> 在当前模型中添加几行</p>
+
+<p><code>alt</code> 用新字符串替换掉某一行中、或某两行之间的所有行中的旧字符串</p>
+
+<h2 id="7-退出系统-quit">7. 退出系统(Quit)</h2>
+
+<p><code>quit</code> 退出LINGO系统</p>
+
+<h2 id="8-系统参数-system-parameters">8. 系统参数(System Parameters)</h2>
+
+<p><code>page</code> 以“行”为单位设置每页长度</p>
+
+<p><code>ter</code> 以简略方式输出结果</p>
+
+<p><code>ver</code> 以详细方式输出结果</p>
+
+<p><code>wid</code> 以“字符”为单位设置显示和输出宽度</p>
+
+<p><code>set</code> 重新设置默认参数</p>
+
+<p><code>freeze</code> 保存当前参数设置，以备下一次重新启动LINGO系统时还是这样的设置</p>
+
+<p><code>time</code> 显示本次系统的运行时间</p>
+
+<h1 id="lingo中的集">LINGO中的集</h1>
+
+<h2 id="1-定义集-在引用之前定义">1. 定义集：（在引用之前定义）</h2>
+
+<pre><code>sets:
+……
+endsets
+</code></pre>
+
+<h2 id="2-定义原始集-表示可选">2. 定义原始集：（[]表示可选）</h2>
+
+<pre><code>setname[/member_list/][:attribute_list];
+名字[成员][成员属性]
+</code></pre>
+
+<h2 id="3-显式罗列">3.显式罗列</h2>
+
+<p>输入每一个不同的名字，用空格或逗号分隔</p>
+
+<pre><code>sets:
+students/Xiaoming Xianhong Lihua/:sex,age;
+endsets
+</code></pre>
+
+<h2 id="4-隐式罗列">4.隐式罗列</h2>
+
+<p>不必列出每个成员的名字</p>
+
+<pre><code>setname/member1..member2/[:attribute_list];
+</code></pre>
+
+<h1 id="lingo运算符">LINGO运算符</h1>
+
+<h2 id="1-算数运算符">1. 算数运算符</h2>
+
+<p>加减乘数以及乘方</p>
+
+<h2 id="2-逻辑预算符">2. 逻辑预算符</h2>
+
+<p><code>#not#</code> 否定操作数的逻辑值，一元运算符</p>
+
+<p><code>#eq#</code> 两操作数相等则返回true</p>
+
+<p><code>#ne#</code> 两运算符不等则返回true</p>
+
+<p><code>#gt#</code> 左边严格大于右边则返回true</p>
+
+<p><code>#ge#</code> 左边大于等于右边则返回true</p>
+
+<p><code>#le#</code> 左边严格小于右边则返回true</p>
+
+<p><code>#and#</code> 两个参数都为true则返回true</p>
+
+<p><code>#or#</code> 两个参数都为false则返回true</p>
+
+<h2 id="3-关系运算符">3. 关系运算符</h2>
+
+<p><code>=</code>、<code>&lt;=</code>、<code>&gt;=</code></p>
+
+<p>LINGO中不支持严格的大于和小于</p>
+
+<p>若要表达<code>A&lt;B</code>，则写成<code>A+X&lt;B</code>，其中X为任意小的正数</p>
+</div>
+
+    
+    
+
+    
+
+    
+
+        <h4 class="page-header">评论</h4>
+
+        <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "haozero" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+    
+
+</main>
+
+        <footer>
+
+            <p class="copyright text-muted">&copy; Haozero</p>
+
+        </footer>
+       
+    </body>
+
+</html>
+

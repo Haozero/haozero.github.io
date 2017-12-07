@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Haozero</title>
+    <link>http://haozero.cc/tags/</link>
+    <description>Recent content in Tags on Haozero</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    
+	<atom:link href="http://haozero.cc/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Bootstrap</title>
+      <link>http://haozero.cc/tags/bootstrap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://haozero.cc/tags/bootstrap/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Css</title>
+      <link>http://haozero.cc/tags/css/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://haozero.cc/tags/css/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Go</title>
+      <link>http://haozero.cc/tags/go/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://haozero.cc/tags/go/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Golang</title>
+      <link>http://haozero.cc/tags/golang/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://haozero.cc/tags/golang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Highlight Js</title>
+      <link>http://haozero.cc/tags/highlight-js/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://haozero.cc/tags/highlight-js/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Html</title>
+      <link>http://haozero.cc/tags/html/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://haozero.cc/tags/html/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hugo</title>
+      <link>http://haozero.cc/tags/hugo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://haozero.cc/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Js</title>
+      <link>http://haozero.cc/tags/js/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://haozero.cc/tags/js/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Responsive</title>
+      <link>http://haozero.cc/tags/responsive/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://haozero.cc/tags/responsive/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Syntax Highlighting</title>
+      <link>http://haozero.cc/tags/syntax-highlighting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://haozero.cc/tags/syntax-highlighting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>岁月神偷</title>
+      <link>http://haozero.cc/tags/%E5%B2%81%E6%9C%88%E7%A5%9E%E5%81%B7/</link>
+      <pubDate>Wed, 04 Feb 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://haozero.cc/tags/%E5%B2%81%E6%9C%88%E7%A5%9E%E5%81%B7/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>歌曲</title>
+      <link>http://haozero.cc/tags/%E6%AD%8C%E6%9B%B2/</link>
+      <pubDate>Wed, 04 Feb 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://haozero.cc/tags/%E6%AD%8C%E6%9B%B2/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

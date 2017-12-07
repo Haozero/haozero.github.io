@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+         
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>用MATLAB将矩阵规范化</title>
+        <style>
+
+    html body {
+        font-family: 'Raleway', sans-serif;
+        background-color: white;
+    }
+
+    :root {
+        --accent: red;
+        --border-width:  5px ;
+    }
+
+</style>
+
+
+<link rel="stylesheet" href="http://haozero.cc//css/main.css">
+
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+
+ <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-dark.min.css"> 
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+ 
+
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/haskell.min.js"></script>  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/kotlin.min.js"></script>  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/scala.min.js"></script>  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/swift.min.js"></script> 
+
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
+ <meta name="generator" content="Hugo 0.30.2" />
+        
+        
+        
+    </head>
+
+    <body>
+         
+        <nav class="navbar navbar-default navbar-fixed-top">
+
+            <div class="container">
+
+                <div class="navbar-header">
+
+                    <a class="navbar-brand visible-xs" href="#">用MATLAB将矩阵规范化</a>
+
+                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                </div>
+
+                <div class="collapse navbar-collapse">
+
+                    
+                        <ul class="nav navbar-nav">
+                            
+                                <li><a href="/">首页</a></li>
+                            
+                                <li><a href="/post/">文章</a></li>
+                            
+                                <li><a href="/todo">ToDo</a></li>
+                            
+                        </ul>
+                    
+
+                    
+                        <ul class="nav navbar-nav navbar-right">
+                            
+                                <li class="navbar-icon"><a href="mailto:haozero@outlook.com"><i class="fa fa-envelope-o"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://github.com/Haozero/"><i class="fa fa-github"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://weibo.cn/skyenr/"><i class="fa fa-weibo"></i></a></li>
+                            
+                        </ul>
+                    
+
+                </div>
+
+            </div>
+
+        </nav>
+
+
+<main>
+
+    <div class="item">
+
+    
+    
+    
+
+    
+    
+
+    <h4><a href="/post/normal_matrix/">用MATLAB将矩阵规范化</a></h4>
+    <h5>May 17，2015</h5>
+    
+
+</div>
+
+
+    <br> <div class="text-justify"><p>使用MATLAB，用极差化方法把数据量纲化。</p>
+
+<pre><code>% 矩阵按列规范化的Matlab程序（ October 6, 2002）：
+X=[790 3977 849 1294 1927 1105 204 1329
+768 5037 1135 1330 1925 1459 275 1487
+942 2793 820 814 1617 942 155 976
+916 2798 901 932 1599 910 182 1135
+1006 2864 1052 1005 1618 839 196 1081];
+X=X/100
+[n,p]=size(X);
+for j=1:p; N(j)=norm(X(:,j)); end
+[N
+max(X)
+min(X)
+sum(X) ]
+Y=X*diag(1./N) %单位化
+Z=X*diag(1./sum(X)) %归一化
+U=X*diag(1./max(X)) %除以各列最大值
+V=(X-ones(n,1)min(X))diag(1./(max(X)-min(X))) % 极差规范化
+W=zscore(X) % 数据中心化(标准化)
+运行结果：
+
+X =（原始数据）
+7.9000 39.7700 8.4900 12.9400 19.2700 11.0500 2.0400 13.2900
+7.6800 50.3700 11.3500 13.3000 19.2500 14.5900 2.7500 14.8700
+9.4200 27.9300 8.2000 8.1400 16.1700 9.4200 1.5500 9.7600
+9.1600 27.9800 9.0100 9.3200 15.9900 9.1000 1.8200 11.3500
+10.0600 28.6400 10.5200 10.0500 16.1800 8.3900 1.9600 10.8100
+
+ans =
+19.8806 80.6350 21.4474 24.4634 38.9979 24.0189 4.6131 27.1786 (各列的模)
+10.0600 50.3700 11.3500 13.3000 19.2700 14.5900 2.7500 14.8700（各列取大）
+7.6800 27.9300 8.2000 8.1400 15.9900 8.3900 1.5500 9.7600（各列取小）
+44.2200 174.6900 47.5700 53.7500 86.8600 52.5500 10.1200 60.0800（各列求和）
+
+Y =（各列单位化）
+0.3974 0.4932 0.3959 0.5290 0.4941 0.4601 0.4422 0.4890
+0.3863 0.6247 0.5292 0.5437 0.4936 0.6074 0.5961 0.5471
+0.4738 0.3464 0.3823 0.3327 0.4146 0.3922 0.3360 0.3591
+0.4608 0.3470 0.4201 0.3810 0.4100 0.3789 0.3945 0.4176
+0.5060 0.3552 0.4905 0.4108 0.4149 0.3493 0.4249 0.3977
+
+Z =（各列归一化（sum to one））
+0.1787 0.2277 0.1785 0.2407 0.2219 0.2103 0.2016 0.2212
+0.1737 0.2883 0.2386 0.2474 0.2216 0.2776 0.2717 0.2475
+0.2130 0.1599 0.1724 0.1514 0.1862 0.1793 0.1532 0.1625
+0.2071 0.1602 0.1894 0.1734 0.1841 0.1732 0.1798 0.1889
+0.2275 0.1639 0.2211 0.1870 0.1863 0.1597 0.1937 0.1799
+
+U =（除以各列最大值）
+0.7853 0.7896 0.7480 0.9729 1.0000 0.7574 0.7418 0.8937
+0.7634 1.0000 1.0000 1.0000 0.9990 1.0000 1.0000 1.0000
+0.9364 0.5545 0.7225 0.6120 0.8391 0.6456 0.5636 0.6564
+0.9105 0.5555 0.7938 0.7008 0.8298 0.6237 0.6618 0.7633
+1.0000 0.5686 0.9269 0.7556 0.8396 0.5751 0.7127 0.7270
+
+V =（各列极差规范化）
+0.0924 0.5276 0.0921 0.9302 1.0000 0.4290 0.4083 0.6908
+0 1.0000 1.0000 1.0000 0.9939 1.0000 1.0000 1.0000
+0.7311 0 0 0 0.0549 0.1661 0 0
+0.6218 0.0022 0.2571 0.2287 0 0.1145 0.2250 0.3112
+1.0000 0.0316 0.7365 0.3702 0.0579 0 0.3417 0.2055
+
+W =（各列数据中心化(标准化)）
+-0.9261 0.4840 -0.7522 0.9640 1.1002 0.2177 0.0358 0.6225
+-1.1419 1.5457 1.3487 1.1224 1.0886 1.6449 1.6257 1.3944
+0.5651 -0.7020 -0.9653 -1.1488 -0.6967 -0.4395 -1.0614 -1.1023
+0.3100 -0.6969 -0.3702 -0.6294 -0.8011 -0.5685 -0.4568 -0.3254
+1.1929 -0.6308 0.7390 -0.3081 -0.6909 -0.8547 -0.1433 -0.5892
+</code></pre>
+</div>
+
+    
+    
+
+    
+
+    
+
+        <h4 class="page-header">评论</h4>
+
+        <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "haozero" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+    
+
+</main>
+
+        <footer>
+
+            <p class="copyright text-muted">&copy; Haozero</p>
+
+        </footer>
+       
+    </body>
+
+</html>
+
