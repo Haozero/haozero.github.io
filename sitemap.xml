@@ -99,6 +99,12 @@
   </url>
   
   <url>
+    <loc>http://haozero.cc/tags/centos/</loc>
+    <lastmod>2017-06-26T16:39:22+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://haozero.cc/tags/css/</loc>
     <priority>0</priority>
   </url>
@@ -162,6 +168,19 @@
   
   <url>
     <loc>http://haozero.cc/tags/</loc>
+    <lastmod>2017-06-26T16:39:22+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://haozero.cc/tags/%E4%BA%BA%E7%94%9F%E6%84%8F%E4%B9%89/</loc>
+    <lastmod>2017-12-04T19:34:22+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://haozero.cc/tags/%E5%A4%A7%E4%B8%80/</loc>
+    <lastmod>2015-07-09T16:39:22+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -172,8 +191,62 @@
   </url>
   
   <url>
+    <loc>http://haozero.cc/tags/%E6%84%9F%E6%85%A8/</loc>
+    <lastmod>2015-07-09T16:39:22+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://haozero.cc/tags/%E6%88%91%E7%9A%84%E4%B8%AA%E7%A5%9E%E5%95%8A/</loc>
+    <lastmod>2015-06-25T16:39:22+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://haozero.cc/tags/%E6%9D%8E%E6%AC%A7%E6%A2%B5/</loc>
+    <lastmod>2016-02-26T23:00:02+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://haozero.cc/tags/%E6%AD%8C%E6%9B%B2/</loc>
     <lastmod>2015-02-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://haozero.cc/tags/%E6%B1%9F%E5%8D%97/</loc>
+    <lastmod>2015-02-03T10:39:22+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://haozero.cc/tags/%E7%AB%A5%E5%B9%B4%E5%9B%9E%E5%BF%86/</loc>
+    <lastmod>2015-11-12T09:39:22+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://haozero.cc/tags/%E8%A7%84%E8%8C%83%E5%8C%96/</loc>
+    <lastmod>2015-05-17T16:39:22+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://haozero.cc/tags/%E8%AF%97%E6%AD%8C/</loc>
+    <lastmod>2015-09-04T16:39:22+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://haozero.cc/tags/%E8%BF%B7%E8%8C%AB/</loc>
+    <lastmod>2017-12-04T19:34:22+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://haozero.cc/tags/%E9%87%8F%E7%BA%B2%E5%8C%96/</loc>
+    <lastmod>2015-05-17T16:39:22+08:00</lastmod>
     <priority>0</priority>
   </url>
   

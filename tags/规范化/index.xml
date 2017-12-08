@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>规范化 on Haozero</title>
+    <link>http://haozero.cc/tags/%E8%A7%84%E8%8C%83%E5%8C%96/</link>
+    <description>Recent content in 规范化 on Haozero</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 17 May 2015 16:39:22 +0800</lastBuildDate>
+    
+	<atom:link href="http://haozero.cc/tags/%E8%A7%84%E8%8C%83%E5%8C%96/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>用MATLAB将矩阵规范化</title>
+      <link>http://haozero.cc/post/normal_matrix/</link>
+      <pubDate>Sun, 17 May 2015 16:39:22 +0800</pubDate>
+      
+      <guid>http://haozero.cc/post/normal_matrix/</guid>
+      <description>使用MATLAB，用极差化方法把数据量纲化。
+% 矩阵按列规范化的Matlab程序（ October 6, 2002）： X=[790 3977 849 1294 1927 1105 204 1329 768 5037 1135 1330 1925 1459 275 1487 942 2793 820 814 1617 942 155 976 916 2798 901 932 1599 910 182 1135 1006 2864 1052 1005 1618 839 196 1081]; X=X/100 [n,p]=size(X); for j=1:p; N(j)=norm(X(:,j)); end [N max(X) min(X) sum(X) ] Y=X*diag(1./N) %单位化 Z=X*diag(1./sum(X)) %归一化 U=X*diag(1./max(X)) %除以各列最大值 V=(X-ones(n,1)min(X))diag(1./(max(X)-min(X))) % 极差规范化 W=zscore(X) % 数据中心化(标准化) 运行结果： X =（原始数据） 7.</description>
+    </item>
+    
+  </channel>
+</rss>

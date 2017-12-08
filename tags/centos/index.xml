@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Centos on Haozero</title>
+    <link>http://haozero.cc/tags/centos/</link>
+    <description>Recent content in Centos on Haozero</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 26 Jun 2017 16:39:22 +0800</lastBuildDate>
+    
+	<atom:link href="http://haozero.cc/tags/centos/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>配置JDK环境、运行apache、连接H2</title>
+      <link>http://haozero.cc/post/jdk_apache_in_centos/</link>
+      <pubDate>Mon, 26 Jun 2017 16:39:22 +0800</pubDate>
+      
+      <guid>http://haozero.cc/post/jdk_apache_in_centos/</guid>
+      <description>配置JDK 环境：  WM虚拟机 + CentOS6.5 + JDK1.8.0_91  软件：  Winscp 在windows下用来连接虚拟机传输文件 Xshell 在windows下连接虚拟机进行命令行操作  相关命令：  mkdir &amp;lt;directory&amp;gt; //新建文件夹 mv &amp;lt;sth&amp;gt; &amp;lt;directory&amp;gt; //移动 tar -zxvf &amp;lt;sth&amp;gt; //解压 vi &amp;lt;sth&amp;gt; //编辑 pwd //显示所在目录 source /etc/profile //使profile生效  步骤：  在虚拟机中运行CentOS
+ 在CentOS的终端里使用ifconfig命令获取ip地址
+ 在windows中打开Xshell连接虚拟机
+ 在windows中打开Winscp连接虚拟机
+ 使用Winscp将JDK文件传至CentOS的目录
+ 在Xshell中找到JDK文件，解压至/opt文件夹
+ 修改/etc/profile文件，配置环境变量如下
+  export JAVA_HOME=/opt/java/ jdk1.8.0_91 export PATH=$JAVA_HOME/bin:$PATH export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar   使用命令source /etc/profile让环境变量生效  使用apache  使用Winscp将apache-tomcat文件传至CentOS的目录</description>
+    </item>
+    
+  </channel>
+</rss>
